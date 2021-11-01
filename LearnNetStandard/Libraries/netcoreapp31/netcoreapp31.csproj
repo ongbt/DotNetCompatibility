@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="lowerNet4">
+      <HintPath>..\..\LowerLibraries\lowerNet4\bin\Debug\lowerNet4.dll</HintPath>
+    </Reference>
+    <Reference Include="lowerNet45">
+      <HintPath>..\..\LowerLibraries\lowerNet45\bin\Debug\lowerNet45.dll</HintPath>
+    </Reference>
+    <Reference Include="lowerNet461">
+      <HintPath>..\..\LowerLibraries\lowerNet461\bin\Debug\lowerNet461.dll</HintPath>
+    </Reference>
+    <Reference Include="lowerNet48">
+      <HintPath>..\..\LowerLibraries\lowerNet48\bin\Debug\lowerNet48.dll</HintPath>
+    </Reference>
+    <Reference Include="lowerNet5">
+      <HintPath>..\..\LowerLibraries\lowerNet5\bin\Debug\net5.0\lowerNet5.dll</HintPath>
+    </Reference>
+    <Reference Include="lowerNetcoreapp21">
+      <HintPath>..\..\LowerLibraries\lowerNetcoreapp21\bin\Debug\netcoreapp2.1\lowerNetcoreapp21.dll</HintPath>
+    </Reference>
+    <Reference Include="lowerNetcoreapp31">
+      <HintPath>..\..\LowerLibraries\lowerNetcoreapp31\bin\Debug\netcoreapp3.1\lowerNetcoreapp31.dll</HintPath>
+    </Reference>
+    <Reference Include="lowerNetstandard20">
+      <HintPath>..\..\LowerLibraries\lowerNetstandard20\bin\Debug\netstandard2.0\lowerNetstandard20.dll</HintPath>
+    </Reference>
+    <Reference Include="lowerNetstandard21">
+      <HintPath>..\..\LowerLibraries\lowerNetstandard21\bin\Debug\netstandard2.1\lowerNetstandard21.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

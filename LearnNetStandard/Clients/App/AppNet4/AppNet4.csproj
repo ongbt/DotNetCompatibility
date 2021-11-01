@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CCF9BB77-BDD8-4758-A783-AC2927131D1A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AppNet4</RootNamespace>
+    <AssemblyName>AppNet4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="net4">
+      <HintPath>..\..\..\Libraries\net4\bin\Debug\net4.dll</HintPath>
+    </Reference>
+    <Reference Include="net45">
+      <HintPath>..\..\..\Libraries\net45\bin\Debug\net45.dll</HintPath>
+    </Reference>
+    <Reference Include="net461">
+      <HintPath>..\..\..\Libraries\net461\bin\Debug\net461.dll</HintPath>
+    </Reference>
+    <Reference Include="net48">
+      <HintPath>..\..\..\Libraries\net48\bin\Debug\net48.dll</HintPath>
+    </Reference>
+    <Reference Include="net5">
+      <HintPath>..\..\..\Libraries\net5\bin\Debug\net5.0\net5.dll</HintPath>
+    </Reference>
+    <Reference Include="netcoreapp31">
+      <HintPath>..\..\..\Libraries\netcoreapp31\bin\Debug\netcoreapp3.1\netcoreapp31.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard20">
+      <HintPath>..\..\..\Libraries\netstandard20\bin\Debug\netstandard2.0\netstandard20.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard21">
+      <HintPath>..\..\..\Libraries\netstandard21\bin\Debug\netstandard2.1\netstandard21.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
